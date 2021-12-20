@@ -19,7 +19,7 @@ final class ListPresenter {
     
     let viewLoadedTrigger = PublishSubject<Void>()
     
-    init(interactor: ListInteractor, router: ListRouter) {
+    init(interactor: ListInteractor, router: ListRouter? = nil) {
         self.interactor = interactor
         self.router = router
         

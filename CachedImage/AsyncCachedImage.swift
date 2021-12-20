@@ -8,7 +8,11 @@
 import Foundation
 import UIKit
 
-let imageCache = NSCache<AnyObject, AnyObject>()
+public enum ImageReturned {
+    case none
+    case cache
+    case downloaded
+}
 
 public class AsyncCachedImage: UIImageView {
     var task: URLSessionDownloadTask!
@@ -16,14 +20,14 @@ public class AsyncCachedImage: UIImageView {
     let documentDirectory = FileManager.default.urls(for: .documentDirectory,
                                                     in: .userDomainMask)[0]
     
-    public func loadImage(from url: URL, cacheId: String) {
+    public func loadImage(from url: URL, cacheId: String, completion: ((ImageReturned)->Void)? = nil) {
         image = nil
         
         if let task = task {
             task.cancel()
         }
         
-        let imageFileName = documentDirectory.appendingPathComponent("\(cacheId).jpg")
+        let imageFileName = documentDirectory.appendingPathComponent("\(cacheId).png")
         
         if FileManager.default.fileExists(atPath: imageFileName.path) {
             let fileUrl = URL(fileURLWithPath: imageFileName.path)
@@ -32,6 +36,7 @@ public class AsyncCachedImage: UIImageView {
                 DispatchQueue.main.async {
                     self.image = newImage
                 }
+                completion?(.cache)
                 return
             }
         }
@@ -63,13 +68,15 @@ public class AsyncCachedImage: UIImageView {
                         DispatchQueue.main.async {
                             self?.image = newImage
                         }
+                        completion?(.cache)
                     }
                     
                 } catch {
+                    completion?(.none)
                     return
                 }
                 
-            } else {
+            } else {completion?(.none)
                 return
             }
         }

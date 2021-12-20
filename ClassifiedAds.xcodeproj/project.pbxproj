@@ -36,6 +36,8 @@
 		BE1127D42770CFA600C637CE /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */; };
 		BE1127D62770D2E300C637CE /* CachedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; };
 		BE1127D72770D2E300C637CE /* CachedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BE1127DD2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
+		BE1127DE2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,7 @@
 		BE1127C42770CF4C00C637CE /* CachedImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageTests.swift; sourceTree = "<group>"; };
 		BE1127C62770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
+		BE1127DC2770F5AF00C637CE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +263,7 @@
 		BE11279427708F1B00C637CE /* Mock */ = {
 			isa = PBXGroup;
 			children = (
+				BE1127DB2770F59600C637CE /* MockImages */,
 				BE11279527708F3500C637CE /* MockURLProtocol.swift */,
 				BE11279727708F7C00C637CE /* MockJSON */,
 			);
@@ -335,6 +339,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE1127DB2770F59600C637CE /* MockImages */ = {
+			isa = PBXGroup;
+			children = (
+				BE1127DC2770F5AF00C637CE /* test.png */,
+			);
+			path = MockImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +524,7 @@
 				BE112759277054E500C637CE /* LaunchScreen.storyboard in Resources */,
 				BE11279B27708FC200C637CE /* mock_dynamodb-writer_GET.json in Resources */,
 				BE112756277054E500C637CE /* Assets.xcassets in Resources */,
+				BE1127DD2770F5AF00C637CE /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +532,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1127DE2770F5AF00C637CE /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -50,9 +50,6 @@ final class ListView: UIViewController {
     }
 
     func bind() {
-//        cartButton.rx.tap.asDriver()
-//            .drive(presenter!.cartButtonTappedTrigger)
-//            .disposed(by: disposeBag)
 
         presenter?.ads
             .subscribe(onNext: { [weak self] ads in
@@ -104,6 +101,10 @@ extension ListView: UICollectionViewDataSource {
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        presenter
     }
 
 }

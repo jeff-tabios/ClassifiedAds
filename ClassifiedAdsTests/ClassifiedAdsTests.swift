@@ -7,11 +7,15 @@
 
 import XCTest
 import RxSwift
+import UIKit
+import CachedImage
 @testable import ClassifiedAds
 
 class ClassifiedAdsTests: XCTestCase {
     
-    //Test ads service using mock json
+    //===============================================================
+    //Sample Unit Tests
+    //===============================================================
     func test_adsServiceShouldReturnResult() {
 
         let sut = AdsService(useMock: true)
@@ -44,6 +48,22 @@ class ClassifiedAdsTests: XCTestCase {
         
         sut.getContentTrigger.onNext(())
         wait(for: [exp], timeout: 10)
+    }
+    
+    //===============================================================
+    //Sample Integration Tests for Async Cached Image Framework
+    //===============================================================
+    func test_cellShouldLoadAnImage() {
+        
+        let image = AsyncCachedImage()
+        if let imgUrl = Bundle(for: type(of: self)).path(forResource: "test", ofType: "png"), let url = URL(string: imgUrl) {
+            let exp = expectation(description: "get image")
+            image.loadImage(from: url, cacheId: "testImg") { result in
+                XCTAssert(result != .none)
+                exp.fulfill()
+            }
+            wait(for: [exp], timeout: 10)
+        }
     }
 
 }
