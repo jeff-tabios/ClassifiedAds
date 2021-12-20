@@ -46,7 +46,6 @@ extension APIService {
                     if let data = data {
                         
                         let decoder = JSONDecoder()
-                        decoder.dateDecodingStrategy = .iso8601
                         guard let result = try? decoder.decode(T.self, from: data) else {
                             observer.onError(APIServiceError.decodeError)
                             return

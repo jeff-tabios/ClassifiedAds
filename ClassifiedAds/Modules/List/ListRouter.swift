@@ -12,7 +12,7 @@ class ListRouter {
     var view: UIViewController {
         let vc = ListView()
         
-        let adsService = AdsService(useMock: true)
+        let adsService = AdsService()
         
         let interactor = ListInteractor(adsService: adsService)
         let presenter = ListPresenter(interactor: interactor, router: self)
@@ -22,8 +22,4 @@ class ListRouter {
         return vc
     }
     
-//    func showCart(from: ListView) {
-//        let cartRouter = CartRouter()
-//        from.navigationController?.pushViewController(cartRouter.view, animated: true)
-//    }
 }

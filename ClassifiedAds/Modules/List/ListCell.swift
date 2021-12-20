@@ -7,11 +7,12 @@
 
 import Foundation
 import UIKit
+import CachedImage
 
 class ListCell: UICollectionViewCell {
     
-    lazy var image: UIImageView = {
-        let imageView = UIImageView()
+    lazy var image: AsyncCachedImage = {
+        let imageView = AsyncCachedImage()
         imageView.contentMode = .scaleAspectFill
         
         return imageView

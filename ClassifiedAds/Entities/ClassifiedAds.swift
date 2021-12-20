@@ -30,15 +30,15 @@ struct Pagination: Codable {
 struct Ad: Codable {
     let createdAt: String?
     let price, name, uid: String?
-    let imageIDS: [String]?
+    let imageIDS: [String]
     let imageUrls, imageUrlsThumbnails: [String]?
 
     enum CodingKeys: String, CodingKey {
-        case createdAt
+        case createdAt = "created_at"
         case price, name, uid
-        case imageIDS
-        case imageUrls
-        case imageUrlsThumbnails
+        case imageIDS = "image_ids"
+        case imageUrls = "image_urls"
+        case imageUrlsThumbnails = "image_urls_thumbnails"
     }
 }
 

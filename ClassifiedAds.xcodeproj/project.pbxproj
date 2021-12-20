@@ -30,6 +30,12 @@
 		BE1127A82770A2D000C637CE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A72770A2D000C637CE /* ListCell.swift */; };
 		BE1127AD2770A34F00C637CE /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AC2770A34F00C637CE /* UICollectionView+.swift */; };
 		BE1127AF2770A36C00C637CE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AE2770A36C00C637CE /* UIView+.swift */; };
+		BE1127BE2770CF4C00C637CE /* CachedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; };
+		BE1127C52770CF4C00C637CE /* CachedImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127C42770CF4C00C637CE /* CachedImageTests.swift */; };
+		BE1127C72770CF4C00C637CE /* CachedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1127B72770CF4C00C637CE /* CachedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE1127D42770CFA600C637CE /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */; };
+		BE1127D62770D2E300C637CE /* CachedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; };
+		BE1127D72770D2E300C637CE /* CachedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +53,42 @@
 			remoteGlobalIDString = BE112748277054D500C637CE;
 			remoteInfo = ClassifiedAds;
 		};
+		BE1127BF2770CF4C00C637CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE112741277054D500C637CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1127B42770CF4C00C637CE;
+			remoteInfo = CachedImage;
+		};
+		BE1127C12770CF4C00C637CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE112741277054D500C637CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE112748277054D500C637CE;
+			remoteInfo = ClassifiedAds;
+		};
+		BE1127D82770D2E300C637CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE112741277054D500C637CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE1127B42770CF4C00C637CE;
+			remoteInfo = CachedImage;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE1127DA2770D2E300C637CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BE1127D72770D2E300C637CE /* CachedImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BE112749277054D500C637CE /* ClassifiedAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassifiedAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +117,13 @@
 		BE1127A72770A2D000C637CE /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
 		BE1127AC2770A34F00C637CE /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		BE1127AE2770A36C00C637CE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		BE1127B52770CF4C00C637CE /* CachedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CachedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1127B72770CF4C00C637CE /* CachedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CachedImage.h; sourceTree = "<group>"; };
+		BE1127B82770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CachedImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1127C42770CF4C00C637CE /* CachedImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageTests.swift; sourceTree = "<group>"; };
+		BE1127C62770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1127D62770D2E300C637CE /* CachedImage.framework in Frameworks */,
 				BE112783277056CC00C637CE /* RxSwift in Frameworks */,
 				BE112781277056CC00C637CE /* RxCocoa in Frameworks */,
 				BE11277E277056A700C637CE /* SnapKit in Frameworks */,
@@ -103,6 +152,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE1127B22770CF4C00C637CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1127BA2770CF4C00C637CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1127BE2770CF4C00C637CE /* CachedImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,7 +176,10 @@
 				BE11274B277054D500C637CE /* ClassifiedAds */,
 				BE112762277054E500C637CE /* ClassifiedAdsTests */,
 				BE11276D277054E500C637CE /* ClassifiedAdsUITests */,
+				BE1127B62770CF4C00C637CE /* CachedImage */,
+				BE1127C32770CF4C00C637CE /* CachedImageTests */,
 				BE11274A277054D500C637CE /* Products */,
+				BE1127D52770D2E300C637CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +189,8 @@
 				BE112749277054D500C637CE /* ClassifiedAds.app */,
 				BE11275F277054E500C637CE /* ClassifiedAdsTests.xctest */,
 				BE11276A277054E500C637CE /* ClassifiedAdsUITests.xctest */,
+				BE1127B52770CF4C00C637CE /* CachedImage.framework */,
+				BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,7 +311,44 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		BE1127B62770CF4C00C637CE /* CachedImage */ = {
+			isa = PBXGroup;
+			children = (
+				BE1127B72770CF4C00C637CE /* CachedImage.h */,
+				BE1127B82770CF4C00C637CE /* Info.plist */,
+				BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */,
+			);
+			path = CachedImage;
+			sourceTree = "<group>";
+		};
+		BE1127C32770CF4C00C637CE /* CachedImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE1127C42770CF4C00C637CE /* CachedImageTests.swift */,
+				BE1127C62770CF4C00C637CE /* Info.plist */,
+			);
+			path = CachedImageTests;
+			sourceTree = "<group>";
+		};
+		BE1127D52770D2E300C637CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BE1127B02770CF4C00C637CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1127C72770CF4C00C637CE /* CachedImage.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BE112748277054D500C637CE /* ClassifiedAds */ = {
@@ -252,10 +358,12 @@
 				BE112745277054D500C637CE /* Sources */,
 				BE112746277054D500C637CE /* Frameworks */,
 				BE112747277054D500C637CE /* Resources */,
+				BE1127DA2770D2E300C637CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BE1127D92770D2E300C637CE /* PBXTargetDependency */,
 			);
 			name = ClassifiedAds;
 			packageProductDependencies = (
@@ -303,6 +411,43 @@
 			productReference = BE11276A277054E500C637CE /* ClassifiedAdsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BE1127B42770CF4C00C637CE /* CachedImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1127CC2770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImage" */;
+			buildPhases = (
+				BE1127B02770CF4C00C637CE /* Headers */,
+				BE1127B12770CF4C00C637CE /* Sources */,
+				BE1127B22770CF4C00C637CE /* Frameworks */,
+				BE1127B32770CF4C00C637CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CachedImage;
+			productName = CachedImage;
+			productReference = BE1127B52770CF4C00C637CE /* CachedImage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE1127BC2770CF4C00C637CE /* CachedImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE1127D02770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImageTests" */;
+			buildPhases = (
+				BE1127B92770CF4C00C637CE /* Sources */,
+				BE1127BA2770CF4C00C637CE /* Frameworks */,
+				BE1127BB2770CF4C00C637CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE1127C02770CF4C00C637CE /* PBXTargetDependency */,
+				BE1127C22770CF4C00C637CE /* PBXTargetDependency */,
+			);
+			name = CachedImageTests;
+			productName = CachedImageTests;
+			productReference = BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -320,6 +465,14 @@
 						TestTargetID = BE112748277054D500C637CE;
 					};
 					BE112769277054E500C637CE = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = BE112748277054D500C637CE;
+					};
+					BE1127B42770CF4C00C637CE = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					BE1127BC2770CF4C00C637CE = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = BE112748277054D500C637CE;
 					};
@@ -345,6 +498,8 @@
 				BE112748277054D500C637CE /* ClassifiedAds */,
 				BE11275E277054E500C637CE /* ClassifiedAdsTests */,
 				BE112769277054E500C637CE /* ClassifiedAdsUITests */,
+				BE1127B42770CF4C00C637CE /* CachedImage */,
+				BE1127BC2770CF4C00C637CE /* CachedImageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -368,6 +523,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE112768277054E500C637CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1127B32770CF4C00C637CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1127BB2770CF4C00C637CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,6 +584,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE1127B12770CF4C00C637CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1127D42770CFA600C637CE /* AsyncCachedImage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1127B92770CF4C00C637CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE1127C52770CF4C00C637CE /* CachedImageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -427,6 +612,21 @@
 			isa = PBXTargetDependency;
 			target = BE112748277054D500C637CE /* ClassifiedAds */;
 			targetProxy = BE11276B277054E500C637CE /* PBXContainerItemProxy */;
+		};
+		BE1127C02770CF4C00C637CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1127B42770CF4C00C637CE /* CachedImage */;
+			targetProxy = BE1127BF2770CF4C00C637CE /* PBXContainerItemProxy */;
+		};
+		BE1127C22770CF4C00C637CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE112748277054D500C637CE /* ClassifiedAds */;
+			targetProxy = BE1127C12770CF4C00C637CE /* PBXContainerItemProxy */;
+		};
+		BE1127D92770D2E300C637CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE1127B42770CF4C00C637CE /* CachedImage */;
+			targetProxy = BE1127D82770D2E300C637CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -674,6 +874,99 @@
 			};
 			name = Release;
 		};
+		BE1127CD2770CF4C00C637CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CachedImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE1127CE2770CF4C00C637CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CachedImage/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImage;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE1127D12770CF4C00C637CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CachedImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
+			};
+			name = Debug;
+		};
+		BE1127D22770CF4C00C637CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CachedImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -709,6 +1002,24 @@
 			buildConfigurations = (
 				BE11277A277054E500C637CE /* Debug */,
 				BE11277B277054E500C637CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1127CC2770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1127CD2770CF4C00C637CE /* Debug */,
+				BE1127CE2770CF4C00C637CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE1127D02770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE1127D12770CF4C00C637CE /* Debug */,
+				BE1127D22770CF4C00C637CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

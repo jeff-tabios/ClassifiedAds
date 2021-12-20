@@ -22,14 +22,6 @@ final class ListPresenter {
     init(interactor: ListInteractor, router: ListRouter) {
         self.interactor = interactor
         self.router = router
-
-//        cartButtonTappedTrigger.asDriver(onErrorDriveWith: .empty())
-//            .drive(onNext: { [weak self] _ in
-//                if let view = self?.view {
-//                    self?.router?.showCart(from: view)
-//                }
-//            })
-//            .disposed(by: disposeBag)
         
         viewLoadedTrigger.asObservable()
             .bind(to: interactor.getContentTrigger)

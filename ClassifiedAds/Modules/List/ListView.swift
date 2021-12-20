@@ -16,8 +16,8 @@ final class ListView: UIViewController {
     let disposeBag = DisposeBag()
     var presenter: ListPresenter?
     var ads: [Ad]?
-    //MARK: Views
     
+    //MARK: Views
     lazy var adsView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -92,8 +92,9 @@ extension ListView: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: ListCell = collectionView.dequeueCellAtIndexPath(indexPath: indexPath)
-        if let adImage = ads?[indexPath.row].imageUrlsThumbnails?[0] {
-            cell.image.image = UIImage(named: adImage)
+        if let adImageUrl = ads?[indexPath.row].imageUrlsThumbnails?[0],
+           let adImageId = ads?[indexPath.row].imageIDS[0] {
+            cell.image.loadImage(from: URL(string: adImageUrl)!, cacheId: adImageId)
         }
         return cell
     }
