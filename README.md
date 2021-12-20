@@ -11,4 +11,4 @@ Details:
 - Has unit tests and integration tests in "ClassifiedAdsTests" folder
 - Has UI test in "ClassifiedAdsUITests" folder
 - Created mocking system that overrides "URLProtocol" and uses mock JSON files and an test image file during tests (Found under "Network" folder)
-- Applies "Solid" principles and created with scalability in mind
+- Applied "Solid" principles and created with scalability in mind
