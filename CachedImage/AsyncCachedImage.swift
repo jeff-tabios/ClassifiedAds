@@ -23,6 +23,8 @@ public class AsyncCachedImage: UIImageView {
     public func loadImage(from url: URL, cacheId: String, completion: ((ImageReturned)->Void)? = nil) {
         image = nil
         
+        addSpinner()
+        
         if let task = task {
             task.cancel()
         }
@@ -35,13 +37,13 @@ public class AsyncCachedImage: UIImageView {
             if let data = data, let newImage = UIImage(data: data) {
                 DispatchQueue.main.async {
                     self.image = newImage
+                    self.removeSpinner()
                 }
                 completion?(.cache)
                 return
             }
         }
         
-        addSpinner()
         task = URLSession.shared.downloadTask(with: url) { [weak self] (localURL, response, error) in
             
             DispatchQueue.main.async {

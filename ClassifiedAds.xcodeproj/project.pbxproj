@@ -38,6 +38,12 @@
 		BE1127D72770D2E300C637CE /* CachedImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BE1127DD2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
 		BE1127DE2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
+		BE1127E02770FF7D00C637CE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127DF2770FF7D00C637CE /* DetailRouter.swift */; };
+		BE1127E12770FF7D00C637CE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127DF2770FF7D00C637CE /* DetailRouter.swift */; };
+		BE1127E32770FF8600C637CE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E22770FF8600C637CE /* DetailView.swift */; };
+		BE1127E42770FF8600C637CE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E22770FF8600C637CE /* DetailView.swift */; };
+		BE1127E62770FF9000C637CE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E52770FF9000C637CE /* DetailPresenter.swift */; };
+		BE1127E72770FF9000C637CE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E52770FF9000C637CE /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +133,9 @@
 		BE1127C62770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
 		BE1127DC2770F5AF00C637CE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		BE1127DF2770FF7D00C637CE /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		BE1127E22770FF8600C637CE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BE1127E52770FF9000C637CE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,6 +311,9 @@
 		BE11279E277094BE00C637CE /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				BE1127DF2770FF7D00C637CE /* DetailRouter.swift */,
+				BE1127E22770FF8600C637CE /* DetailView.swift */,
+				BE1127E52770FF9000C637CE /* DetailPresenter.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -565,6 +577,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1127A22770953C00C637CE /* ListPresenter.swift in Sources */,
+				BE1127E02770FF7D00C637CE /* DetailRouter.swift in Sources */,
+				BE1127E32770FF8600C637CE /* DetailView.swift in Sources */,
 				BE1127A02770953100C637CE /* ListRouter.swift in Sources */,
 				BE11274D277054D500C637CE /* AppDelegate.swift in Sources */,
 				BE1127862770647100C637CE /* AdsEndpoints.swift in Sources */,
@@ -573,6 +587,7 @@
 				BE1127892770648600C637CE /* APIService.swift in Sources */,
 				BE1127A62770955100C637CE /* ListInteractor.swift in Sources */,
 				BE11278B27706A2200C637CE /* HTTPMethod.swift in Sources */,
+				BE1127E62770FF9000C637CE /* DetailPresenter.swift in Sources */,
 				BE1127AF2770A36C00C637CE /* UIView+.swift in Sources */,
 				BE11279327706D9800C637CE /* ClassifiedAds.swift in Sources */,
 				BE1127A42770954400C637CE /* ListView.swift in Sources */,
@@ -587,6 +602,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE112764277054E500C637CE /* ClassifiedAdsTests.swift in Sources */,
+				BE1127E42770FF8600C637CE /* DetailView.swift in Sources */,
+				BE1127E12770FF7D00C637CE /* DetailRouter.swift in Sources */,
+				BE1127E72770FF9000C637CE /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

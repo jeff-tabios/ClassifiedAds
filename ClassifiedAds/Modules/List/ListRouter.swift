@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ListRouter {
-    var view: UIViewController {
+    var view: ListView {
         let vc = ListView()
         
         let adsService = AdsService()
@@ -22,4 +22,8 @@ class ListRouter {
         return vc
     }
     
+    func showDetail(from: ListView, ad: Ad) {
+        let detailRouter = DetailRouter(ad: ad)
+        from.navigationController?.pushViewController(detailRouter.view, animated: true)
+    }
 }

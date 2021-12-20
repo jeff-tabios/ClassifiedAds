@@ -32,4 +32,10 @@ final class ListPresenter {
             .disposed(by: disposeBag)
         
     }
+    
+    func showDetail(ad: Ad) {
+        if let view = view {
+            router?.showDetail(from: view, ad: ad)
+        }
+    }
 }

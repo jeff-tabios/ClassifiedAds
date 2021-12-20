@@ -40,13 +40,9 @@ final class ListView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
+        navigationItem.title = "Listing"
         addSubviews()
         bind()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
     }
 
     func bind() {
@@ -104,7 +100,9 @@ extension ListView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        presenter
+        if let ad = ads?[indexPath.row] {
+            presenter?.showDetail(ad: ad)
+        }
     }
 
 }
