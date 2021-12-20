@@ -11,4 +11,5 @@ Details:
 - Has unit tests and integration tests in "ClassifiedAdsTests" folder
 - Has UI test in "ClassifiedAdsUITests" folder
 - Created mocking system (found under "Network" folder) that overrides "URLProtocol" and uses mock JSON files and a test image file during tests. This way, the APIService protocol gets included in the test coverage 
+- Uses RXSwift and SnapKit
 - Applied "Solid" principles and created with scalability in mind
