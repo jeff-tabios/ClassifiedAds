@@ -96,6 +96,13 @@ extension ListView: UICollectionViewDataSource {
            let adImageId = ads?[indexPath.row].imageIDS[0] {
             cell.image.loadImage(from: URL(string: adImageUrl)!, cacheId: adImageId)
         }
+        
+        if let adTitle = ads?[indexPath.row].name,
+           let adPrice = ads?[indexPath.row].price {
+            cell.title.text = adTitle.capitalized
+            cell.price.text = adPrice
+        }
+        
         return cell
     }
 

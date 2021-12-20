@@ -13,9 +13,22 @@ class ListCell: UICollectionViewCell {
     
     lazy var image: AsyncCachedImage = {
         let imageView = AsyncCachedImage()
-        imageView.contentMode = .scaleAspectFill
-        
+        imageView.contentMode = .scaleAspectFit
         return imageView
+    }()
+    
+    lazy var title: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        
+        return label
+    }()
+    
+    lazy var price: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        
+        return label
     }()
     
     override init(frame: CGRect) {
@@ -28,9 +41,13 @@ class ListCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layoutIfNeeded()
+    }
+    
     func configure() {
         backgroundColor = .white
-        layer.cornerRadius = 10.0
         layer.borderWidth = 0.0
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 0)
@@ -41,6 +58,8 @@ class ListCell: UICollectionViewCell {
     
     func addSubviews() {
         self.contentView.addSubview(image)
+        self.contentView.addSubview(title)
+        self.contentView.addSubview(price)
         
         setNeedsUpdateConstraints()
     }
@@ -48,7 +67,19 @@ class ListCell: UICollectionViewCell {
     
     override func updateConstraints() {
         image.snp.remakeConstraints { (make) -> Void in
-            make.width.height.equalToSuperview()
+            make.top.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalTo(image.snp.width)
+        }
+        
+        title.snp.remakeConstraints { (make) -> Void in
+            make.top.equalTo(image.snp.bottom).offset(10)
+            make.width.equalToSuperview()
+        }
+        
+        price.snp.remakeConstraints { (make) -> Void in
+            make.top.equalTo(title.snp.bottom).offset(5)
+            make.width.equalToSuperview()
         }
         
         super.updateConstraints()
