@@ -15,7 +15,7 @@ extension UIView: Identifiable {
         return String(describing: self)
     }
 
-    var safeArea: ConstraintBasicAttributesDSL {
+    public var safeArea: ConstraintBasicAttributesDSL {
         #if swift(>=3.2)
         if #available(iOS 11.0, *) {
             return self.safeAreaLayoutGuide.snp

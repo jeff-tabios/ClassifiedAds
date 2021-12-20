@@ -30,8 +30,6 @@
 		BE1127A82770A2D000C637CE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A72770A2D000C637CE /* ListCell.swift */; };
 		BE1127AD2770A34F00C637CE /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AC2770A34F00C637CE /* UICollectionView+.swift */; };
 		BE1127AF2770A36C00C637CE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AE2770A36C00C637CE /* UIView+.swift */; };
-		BE1127BE2770CF4C00C637CE /* CachedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; };
-		BE1127C52770CF4C00C637CE /* CachedImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127C42770CF4C00C637CE /* CachedImageTests.swift */; };
 		BE1127C72770CF4C00C637CE /* CachedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = BE1127B72770CF4C00C637CE /* CachedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BE1127D42770CFA600C637CE /* AsyncCachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */; };
 		BE1127D62770D2E300C637CE /* CachedImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1127B52770CF4C00C637CE /* CachedImage.framework */; };
@@ -39,11 +37,8 @@
 		BE1127DD2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
 		BE1127DE2770F5AF00C637CE /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = BE1127DC2770F5AF00C637CE /* test.png */; };
 		BE1127E02770FF7D00C637CE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127DF2770FF7D00C637CE /* DetailRouter.swift */; };
-		BE1127E12770FF7D00C637CE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127DF2770FF7D00C637CE /* DetailRouter.swift */; };
 		BE1127E32770FF8600C637CE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E22770FF8600C637CE /* DetailView.swift */; };
-		BE1127E42770FF8600C637CE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E22770FF8600C637CE /* DetailView.swift */; };
 		BE1127E62770FF9000C637CE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E52770FF9000C637CE /* DetailPresenter.swift */; };
-		BE1127E72770FF9000C637CE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127E52770FF9000C637CE /* DetailPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,20 +50,6 @@
 			remoteInfo = ClassifiedAds;
 		};
 		BE11276B277054E500C637CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE112741277054D500C637CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE112748277054D500C637CE;
-			remoteInfo = ClassifiedAds;
-		};
-		BE1127BF2770CF4C00C637CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BE112741277054D500C637CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BE1127B42770CF4C00C637CE;
-			remoteInfo = CachedImage;
-		};
-		BE1127C12770CF4C00C637CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BE112741277054D500C637CE /* Project object */;
 			proxyType = 1;
@@ -128,9 +109,6 @@
 		BE1127B52770CF4C00C637CE /* CachedImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CachedImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1127B72770CF4C00C637CE /* CachedImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CachedImage.h; sourceTree = "<group>"; };
 		BE1127B82770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CachedImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE1127C42770CF4C00C637CE /* CachedImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImageTests.swift; sourceTree = "<group>"; };
-		BE1127C62770CF4C00C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE1127D32770CFA600C637CE /* AsyncCachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCachedImage.swift; sourceTree = "<group>"; };
 		BE1127DC2770F5AF00C637CE /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 		BE1127DF2770FF7D00C637CE /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
@@ -171,14 +149,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE1127BA2770CF4C00C637CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE1127BE2770CF4C00C637CE /* CachedImage.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -189,7 +159,6 @@
 				BE112762277054E500C637CE /* ClassifiedAdsTests */,
 				BE11276D277054E500C637CE /* ClassifiedAdsUITests */,
 				BE1127B62770CF4C00C637CE /* CachedImage */,
-				BE1127C32770CF4C00C637CE /* CachedImageTests */,
 				BE11274A277054D500C637CE /* Products */,
 				BE1127D52770D2E300C637CE /* Frameworks */,
 			);
@@ -202,7 +171,6 @@
 				BE11275F277054E500C637CE /* ClassifiedAdsTests.xctest */,
 				BE11276A277054E500C637CE /* ClassifiedAdsUITests.xctest */,
 				BE1127B52770CF4C00C637CE /* CachedImage.framework */,
-				BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -337,15 +305,6 @@
 			path = CachedImage;
 			sourceTree = "<group>";
 		};
-		BE1127C32770CF4C00C637CE /* CachedImageTests */ = {
-			isa = PBXGroup;
-			children = (
-				BE1127C42770CF4C00C637CE /* CachedImageTests.swift */,
-				BE1127C62770CF4C00C637CE /* Info.plist */,
-			);
-			path = CachedImageTests;
-			sourceTree = "<group>";
-		};
 		BE1127D52770D2E300C637CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,25 +412,6 @@
 			productReference = BE1127B52770CF4C00C637CE /* CachedImage.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BE1127BC2770CF4C00C637CE /* CachedImageTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BE1127D02770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImageTests" */;
-			buildPhases = (
-				BE1127B92770CF4C00C637CE /* Sources */,
-				BE1127BA2770CF4C00C637CE /* Frameworks */,
-				BE1127BB2770CF4C00C637CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BE1127C02770CF4C00C637CE /* PBXTargetDependency */,
-				BE1127C22770CF4C00C637CE /* PBXTargetDependency */,
-			);
-			name = CachedImageTests;
-			productName = CachedImageTests;
-			productReference = BE1127BD2770CF4C00C637CE /* CachedImageTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -496,10 +436,6 @@
 						CreatedOnToolsVersion = 12.5;
 						LastSwiftMigration = 1250;
 					};
-					BE1127BC2770CF4C00C637CE = {
-						CreatedOnToolsVersion = 12.5;
-						TestTargetID = BE112748277054D500C637CE;
-					};
 				};
 			};
 			buildConfigurationList = BE112744277054D500C637CE /* Build configuration list for PBXProject "ClassifiedAds" */;
@@ -523,7 +459,6 @@
 				BE11275E277054E500C637CE /* ClassifiedAdsTests */,
 				BE112769277054E500C637CE /* ClassifiedAdsUITests */,
 				BE1127B42770CF4C00C637CE /* CachedImage */,
-				BE1127BC2770CF4C00C637CE /* CachedImageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -556,13 +491,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BE1127B32770CF4C00C637CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BE1127BB2770CF4C00C637CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -602,9 +530,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE112764277054E500C637CE /* ClassifiedAdsTests.swift in Sources */,
-				BE1127E42770FF8600C637CE /* DetailView.swift in Sources */,
-				BE1127E12770FF7D00C637CE /* DetailRouter.swift in Sources */,
-				BE1127E72770FF9000C637CE /* DetailPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,14 +549,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE1127B92770CF4C00C637CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE1127C52770CF4C00C637CE /* CachedImageTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -644,16 +561,6 @@
 			isa = PBXTargetDependency;
 			target = BE112748277054D500C637CE /* ClassifiedAds */;
 			targetProxy = BE11276B277054E500C637CE /* PBXContainerItemProxy */;
-		};
-		BE1127C02770CF4C00C637CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE1127B42770CF4C00C637CE /* CachedImage */;
-			targetProxy = BE1127BF2770CF4C00C637CE /* PBXContainerItemProxy */;
-		};
-		BE1127C22770CF4C00C637CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BE112748277054D500C637CE /* ClassifiedAds */;
-			targetProxy = BE1127C12770CF4C00C637CE /* PBXContainerItemProxy */;
 		};
 		BE1127D92770D2E300C637CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -961,44 +868,6 @@
 			};
 			name = Release;
 		};
-		BE1127D12770CF4C00C637CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CachedImageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
-			};
-			name = Debug;
-		};
-		BE1127D22770CF4C00C637CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CachedImageTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = jefftabios.CachedImageTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClassifiedAds.app/ClassifiedAds";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1043,15 +912,6 @@
 			buildConfigurations = (
 				BE1127CD2770CF4C00C637CE /* Debug */,
 				BE1127CE2770CF4C00C637CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BE1127D02770CF4C00C637CE /* Build configuration list for PBXNativeTarget "CachedImageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BE1127D12770CF4C00C637CE /* Debug */,
-				BE1127D22770CF4C00C637CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

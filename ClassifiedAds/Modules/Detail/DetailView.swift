@@ -26,6 +26,8 @@ final class DetailView: UIViewController {
     lazy var titleName: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.numberOfLines = 0
         
         return label
     }()
@@ -33,6 +35,9 @@ final class DetailView: UIViewController {
     lazy var price: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.numberOfLines = 0
+        label.textColor = .red
         
         return label
     }()
@@ -55,6 +60,7 @@ final class DetailView: UIViewController {
             if let adTitle = ad.name,
                let adPrice = ad.price {
                 self.titleName.text = adTitle.capitalized
+                self.titleName.sizeToFit()
                 self.price.text = adPrice
             }
         }

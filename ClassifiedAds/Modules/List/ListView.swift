@@ -27,7 +27,7 @@ final class ListView: UIViewController {
         
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .white
-        collectionView.isPagingEnabled = true
+        collectionView.isPagingEnabled = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.showsVerticalScrollIndicator = false
         collectionView.delegate = self
@@ -93,6 +93,7 @@ extension ListView: UICollectionViewDataSource {
         if let adTitle = ads?[indexPath.row].name,
            let adPrice = ads?[indexPath.row].price {
             cell.title.text = adTitle.capitalized
+            cell.title.sizeToFit()
             cell.price.text = adPrice
         }
         

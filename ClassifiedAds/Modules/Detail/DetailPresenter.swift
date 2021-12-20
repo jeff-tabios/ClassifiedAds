@@ -10,7 +10,6 @@ import RxSwift
 import RxCocoa
 
 final class DetailPresenter {
-    
     let ad: Ad
     
     init(ad: Ad) {

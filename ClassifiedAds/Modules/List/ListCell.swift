@@ -20,13 +20,17 @@ class ListCell: UICollectionViewCell {
     lazy var title: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
-        
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.numberOfLines = 0
         return label
     }()
     
     lazy var price: UILabel = {
         let label = UILabel()
         label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        label.numberOfLines = 0
+        label.textColor = .red
         
         return label
     }()
