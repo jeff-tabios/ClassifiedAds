@@ -1,7 +1,7 @@
 # ClassifiedAds iOS App
 By Jeffrey Tabios
 
-https://user-images.githubusercontent.com/52874288/146827803-c474f2fb-849e-47f3-8aad-570467dfa533.mov
+https://user-images.githubusercontent.com/52874288/146828442-9a60d7ef-2030-4583-b5f0-a99f2e72dbc2.mov
 
 Details:
 - Implemented programatically
