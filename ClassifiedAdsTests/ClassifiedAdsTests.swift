@@ -6,28 +6,44 @@
 //
 
 import XCTest
+import RxSwift
 @testable import ClassifiedAds
 
 class ClassifiedAdsTests: XCTestCase {
+    
+    //Test ads service using mock json
+    func test_adsServiceShouldReturnResult() {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let sut = AdsService(useMock: true)
+        let bag = DisposeBag()
+        
+        let exp = expectation(description: "get ads")
+        
+        sut.getAds()
+            .asObservable()
+            .subscribe(onNext: { ads in
+                XCTAssert(ads.results?.count == 1)
+                exp.fulfill()
+            }).disposed(by: bag)
+        
+        wait(for: [exp], timeout: 1)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_getContentInteractorShouldReturnContent() {
+        let sut = ListInteractor(adsService: AdsService(useMock: true))
+        let bag = DisposeBag()
+        
+        let exp = expectation(description: "get content")
+        
+        sut.ads.asObservable()
+            .subscribe(onNext: { ads in
+                XCTAssert(ads.results?.count == 1)
+                exp.fulfill()
+            }).disposed(by: bag)
+        
+        
+        sut.getContentTrigger.onNext(())
+        wait(for: [exp], timeout: 10)
     }
 
 }

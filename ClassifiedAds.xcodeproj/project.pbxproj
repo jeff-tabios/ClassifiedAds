@@ -16,6 +16,20 @@
 		BE11277E277056A700C637CE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BE11277D277056A700C637CE /* SnapKit */; };
 		BE112781277056CC00C637CE /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BE112780277056CC00C637CE /* RxCocoa */; };
 		BE112783277056CC00C637CE /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BE112782277056CC00C637CE /* RxSwift */; };
+		BE1127862770647100C637CE /* AdsEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127852770647100C637CE /* AdsEndpoints.swift */; };
+		BE1127892770648600C637CE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127882770648600C637CE /* APIService.swift */; };
+		BE11278B27706A2200C637CE /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11278A27706A2200C637CE /* HTTPMethod.swift */; };
+		BE11279027706D6100C637CE /* AdsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11278F27706D6100C637CE /* AdsService.swift */; };
+		BE11279327706D9800C637CE /* ClassifiedAds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11279227706D9800C637CE /* ClassifiedAds.swift */; };
+		BE11279627708F3500C637CE /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11279527708F3500C637CE /* MockURLProtocol.swift */; };
+		BE11279B27708FC200C637CE /* mock_dynamodb-writer_GET.json in Resources */ = {isa = PBXBuildFile; fileRef = BE11279A27708FC200C637CE /* mock_dynamodb-writer_GET.json */; };
+		BE1127A02770953100C637CE /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE11279F2770953100C637CE /* ListRouter.swift */; };
+		BE1127A22770953C00C637CE /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A12770953C00C637CE /* ListPresenter.swift */; };
+		BE1127A42770954400C637CE /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A32770954400C637CE /* ListView.swift */; };
+		BE1127A62770955100C637CE /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A52770955100C637CE /* ListInteractor.swift */; };
+		BE1127A82770A2D000C637CE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127A72770A2D000C637CE /* ListCell.swift */; };
+		BE1127AD2770A34F00C637CE /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AC2770A34F00C637CE /* UICollectionView+.swift */; };
+		BE1127AF2770A36C00C637CE /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1127AE2770A36C00C637CE /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +62,20 @@
 		BE11276A277054E500C637CE /* ClassifiedAdsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassifiedAdsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE11276E277054E500C637CE /* ClassifiedAdsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAdsUITests.swift; sourceTree = "<group>"; };
 		BE112770277054E500C637CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE1127852770647100C637CE /* AdsEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsEndpoints.swift; sourceTree = "<group>"; };
+		BE1127882770648600C637CE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		BE11278A27706A2200C637CE /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BE11278F27706D6100C637CE /* AdsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsService.swift; sourceTree = "<group>"; };
+		BE11279227706D9800C637CE /* ClassifiedAds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifiedAds.swift; sourceTree = "<group>"; };
+		BE11279527708F3500C637CE /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		BE11279A27708FC200C637CE /* mock_dynamodb-writer_GET.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "mock_dynamodb-writer_GET.json"; sourceTree = "<group>"; };
+		BE11279F2770953100C637CE /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		BE1127A12770953C00C637CE /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		BE1127A32770954400C637CE /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BE1127A52770955100C637CE /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		BE1127A72770A2D000C637CE /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		BE1127AC2770A34F00C637CE /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		BE1127AE2770A36C00C637CE /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +129,11 @@
 		BE11274B277054D500C637CE /* ClassifiedAds */ = {
 			isa = PBXGroup;
 			children = (
+				BE11279C277094B000C637CE /* Modules */,
+				BE11279127706D8000C637CE /* Entities */,
+				BE1127A92770A31E00C637CE /* Extensions */,
+				BE11278E27706D5000C637CE /* Services */,
+				BE1127842770644000C637CE /* Network */,
 				BE11274C277054D500C637CE /* AppDelegate.swift */,
 				BE11274E277054D500C637CE /* SceneDelegate.swift */,
 				BE112755277054E500C637CE /* Assets.xcassets */,
@@ -126,6 +159,87 @@
 				BE112770277054E500C637CE /* Info.plist */,
 			);
 			path = ClassifiedAdsUITests;
+			sourceTree = "<group>";
+		};
+		BE1127842770644000C637CE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BE1127852770647100C637CE /* AdsEndpoints.swift */,
+				BE1127882770648600C637CE /* APIService.swift */,
+				BE11278A27706A2200C637CE /* HTTPMethod.swift */,
+				BE11279427708F1B00C637CE /* Mock */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BE11278E27706D5000C637CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE11278F27706D6100C637CE /* AdsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BE11279127706D8000C637CE /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BE11279227706D9800C637CE /* ClassifiedAds.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BE11279427708F1B00C637CE /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BE11279527708F3500C637CE /* MockURLProtocol.swift */,
+				BE11279727708F7C00C637CE /* MockJSON */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BE11279727708F7C00C637CE /* MockJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BE11279A27708FC200C637CE /* mock_dynamodb-writer_GET.json */,
+			);
+			path = MockJSON;
+			sourceTree = "<group>";
+		};
+		BE11279C277094B000C637CE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE11279D277094B800C637CE /* List */,
+				BE11279E277094BE00C637CE /* Detail */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE11279D277094B800C637CE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				BE11279F2770953100C637CE /* ListRouter.swift */,
+				BE1127A32770954400C637CE /* ListView.swift */,
+				BE1127A12770953C00C637CE /* ListPresenter.swift */,
+				BE1127A52770955100C637CE /* ListInteractor.swift */,
+				BE1127A72770A2D000C637CE /* ListCell.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BE11279E277094BE00C637CE /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BE1127A92770A31E00C637CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BE1127AC2770A34F00C637CE /* UICollectionView+.swift */,
+				BE1127AE2770A36C00C637CE /* UIView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE112759277054E500C637CE /* LaunchScreen.storyboard in Resources */,
+				BE11279B27708FC200C637CE /* mock_dynamodb-writer_GET.json in Resources */,
 				BE112756277054E500C637CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,8 +381,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1127A22770953C00C637CE /* ListPresenter.swift in Sources */,
+				BE1127A02770953100C637CE /* ListRouter.swift in Sources */,
 				BE11274D277054D500C637CE /* AppDelegate.swift in Sources */,
+				BE1127862770647100C637CE /* AdsEndpoints.swift in Sources */,
+				BE11279027706D6100C637CE /* AdsService.swift in Sources */,
+				BE1127A82770A2D000C637CE /* ListCell.swift in Sources */,
+				BE1127892770648600C637CE /* APIService.swift in Sources */,
+				BE1127A62770955100C637CE /* ListInteractor.swift in Sources */,
+				BE11278B27706A2200C637CE /* HTTPMethod.swift in Sources */,
+				BE1127AF2770A36C00C637CE /* UIView+.swift in Sources */,
+				BE11279327706D9800C637CE /* ClassifiedAds.swift in Sources */,
+				BE1127A42770954400C637CE /* ListView.swift in Sources */,
 				BE11274F277054D500C637CE /* SceneDelegate.swift in Sources */,
+				BE1127AD2770A34F00C637CE /* UICollectionView+.swift in Sources */,
+				BE11279627708F3500C637CE /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
