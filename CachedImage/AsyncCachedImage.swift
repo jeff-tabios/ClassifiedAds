@@ -70,7 +70,7 @@ public class AsyncCachedImage: UIImageView {
                         DispatchQueue.main.async {
                             self?.image = newImage
                         }
-                        completion?(.cache)
+                        completion?(.downloaded)
                     }
                     
                 } catch {
