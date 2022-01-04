@@ -56,7 +56,8 @@ class ClassifiedAdsTests: XCTestCase {
     func test_cellShouldLoadAnImage() {
         
         let image = AsyncCachedImage()
-        if let imgUrl = Bundle(for: type(of: self)).path(forResource: "test", ofType: "png"), let url = URL(string: imgUrl) {
+        if let imgPath = Bundle(for: type(of: self)).path(forResource: "test", ofType: "png") {
+            let url = URL(fileURLWithPath: imgPath)
             let exp = expectation(description: "get image")
             image.loadImage(from: url, cacheId: "testImg") { result in
                 XCTAssert(result != .none)

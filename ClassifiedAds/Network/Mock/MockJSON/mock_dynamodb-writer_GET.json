@@ -10,10 +10,10 @@
           "9355183956e3445e89735d877b798689"
         ],
         "image_urls": [
-          "/Users/jeffreytabios/Library/Developer/Xcode/DerivedData/ClassifiedAds-byxumnejyptzdhawjojoetxeiprs/Build/Products/Debug-iphonesimulator/ClassifiedAds.app/PlugIns/ClassifiedAdsTests.xctest/test.png"
+          "test.png"
         ],
         "image_urls_thumbnails": [
-          "/Users/jeffreytabios/Library/Developer/Xcode/DerivedData/ClassifiedAds-byxumnejyptzdhawjojoetxeiprs/Build/Products/Debug-iphonesimulator/ClassifiedAds.app/PlugIns/ClassifiedAdsTests.xctest/test.png"
+          "test.png"
         ]
       }
   ],

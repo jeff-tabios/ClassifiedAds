@@ -180,7 +180,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "18926E4E-8D7F-4975-911D-9CEF819840BD - c4fd35f59873e9a5"
+                  uuid = "18926E4E-8D7F-4975-911D-9CEF819840BD - c4fd35f59873ea1b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -190,12 +190,12 @@
                   urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/CachedImage/AsyncCachedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
                   offsetFromSymbolStart = "554">
                </Location>
                <Location
-                  uuid = "18926E4E-8D7F-4975-911D-9CEF819840BD - 288c50dd1b0a246d"
+                  uuid = "18926E4E-8D7F-4975-911D-9CEF819840BD - 288c50dd1b0a242f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -205,8 +205,8 @@
                   urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/CachedImage/AsyncCachedImage.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
                   offsetFromSymbolStart = "45">
                </Location>
             </Locations>
@@ -216,7 +216,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "24573BF7-259C-4B9B-BFDF-B983925E7B50"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CachedImage/AsyncCachedImage.swift"
@@ -272,6 +272,166 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
             endingLineNumber = "46"
+            landmarkName = "loadImage(from:cacheId:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E1202EF4-428B-48CE-A749-D94AA4C120C7 - 9f17e6f35d514830"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CachedImage.AsyncCachedImage.loadImage(from: Foundation.URL, cacheId: Swift.String, completion: Swift.Optional&lt;(CachedImage.ImageReturned) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "CachedImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/CachedImage/AsyncCachedImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "2691">
+               </Location>
+               <Location
+                  uuid = "E1202EF4-428B-48CE-A749-D94AA4C120C7 - c4fd35f59873e9a5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CachedImage.AsyncCachedImage.loadImage(from: Foundation.URL, cacheId: Swift.String, completion: Swift.Optional&lt;(CachedImage.ImageReturned) -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "CachedImage"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/CachedImage/AsyncCachedImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "496">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EA52C665-0E15-4ABB-8AFC-684A4ED0C532"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ClassifiedAdsTests/ClassifiedAdsTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "test_cellShouldLoadAnImage()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EA52C665-0E15-4ABB-8AFC-684A4ED0C532 - 2aa665472c00f85d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ClassifiedAdsTests.ClassifiedAdsTests.test_cellShouldLoadAnImage() -&gt; ()"
+                  moduleName = "ClassifiedAdsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/ClassifiedAdsTests/ClassifiedAdsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "61"
+                  endingLineNumber = "61"
+                  offsetFromSymbolStart = "967">
+               </Location>
+               <Location
+                  uuid = "EA52C665-0E15-4ABB-8AFC-684A4ED0C532 - 78981f74a3190c3f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CachedImage.ImageReturned) -&gt; () in ClassifiedAdsTests.ClassifiedAdsTests.test_cellShouldLoadAnImage() -&gt; ()"
+                  moduleName = "ClassifiedAdsTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jeffreytabios/Documents/GitHub/ClassifiedAds/ClassifiedAdsTests/ClassifiedAdsTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "91">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFE87769-CF7D-4B2F-A386-3C39FD66EE19"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CachedImage/AsyncCachedImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "loadImage(from:cacheId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2D3A3DDA-CC47-4C61-BAE2-F6F98C268010"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CachedImage/AsyncCachedImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "loadImage(from:cacheId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32B1904E-ED67-4D1C-8745-98473BAD6240"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CachedImage/AsyncCachedImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "loadImage(from:cacheId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13FE567F-428A-4F82-BAE8-2CD444CA5699"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CachedImage/AsyncCachedImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "loadImage(from:cacheId:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0132BCD5-4B46-4940-963E-D1F3529C757C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CachedImage/AsyncCachedImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "loadImage(from:cacheId:completion:)"
             landmarkType = "7">
          </BreakpointContent>

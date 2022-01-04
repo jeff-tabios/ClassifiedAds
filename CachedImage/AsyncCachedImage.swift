@@ -78,7 +78,8 @@ public class AsyncCachedImage: UIImageView {
                     return
                 }
                 
-            } else {completion?(.none)
+            } else {
+                completion?(.none)
                 return
             }
         }
